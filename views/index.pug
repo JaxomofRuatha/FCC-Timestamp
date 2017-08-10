@@ -1,0 +1,34 @@
+doctype html
+html
+    head
+        title A Timestamp Microservice
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
+        link(rel="stylesheet" type="text/css" href="./style.css")
+    body
+        header
+            h1 Timestamp Express Microservice
+        div#description
+            p Hi there! I can take your input, and if there's a date or Unix timestamp in there, I'll make sure to give you back both formats to use! You can enter a string below, or enter it in the URL manually as a parameter.
+            span The current Unix time is: 
+            div.example
+                h2 Example input
+                h3 As parameter:
+                span https://fcc-timestamp-jor.glitch.me/August%209%202017
+                span https://fcc-timestamp-jor.glitch.me/1502236800
+                h3 In form:
+                span August 9, 2017
+                span 1502236800
+            div#query-form
+                form(action="/" method="get")
+                    input(type="text" name="time-string" required)
+                    input(type="submit" value="Submit")
+        footer
+        script(
+            src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"
+            )
+        script(
+            src="./client.js"
+            )

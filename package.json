@@ -1,0 +1,28 @@
+{
+    "name": "fcc-timestamp-jor",
+    "version": "0.0.1",
+    "description": "A timestamp microservice created with Express fulfilling the user stories of the Free Code Camp back end project",
+    "main": "server.js",
+    "engines": {
+        "node": "^6"
+    },
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.3",
+        "moment": "^2.18.1",
+        "nodemon": "^1.11.0",
+        "pug": "^2.0.0-rc.3"
+    },
+    "repository": {
+        "url": "https://glitch.com/edit/#!/fcc-timestamp-jor"
+    },
+    "license": "MIT",
+    "keywords": [
+        "node",
+        "glitch",
+        "express"
+    ]
+}
