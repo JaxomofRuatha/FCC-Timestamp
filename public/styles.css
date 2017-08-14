@@ -1,4 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+
 body {
-    background-color: black;
-    color: white;
+    background-color: #03191E;
+    color: #C1CFDA;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #20A4F3;
+}
+
+h2 {
+    color: #941C2F;
+}
+
+h3 {
+    color: #59F8E8;
+}
+
+span {
+    margin: 10px;
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    max-width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.sample-col {
+    width: 50%;
+}
+
+#flex-examples {
+    display: flex;
 }

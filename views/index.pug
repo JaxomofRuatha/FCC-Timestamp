@@ -12,23 +12,32 @@ html
         div#description
             p Hi there! I can take your input, and if there's a date or Unix timestamp in there, I'll make sure to give you back both formats to use! You can enter a string below, or enter it in the URL manually as a parameter.
             span The current Unix time is: 
-            div.example
-                h2 Example input
-                h3 As parameter:
-                span https://fcc-timestamp-jor.glitch.me/August%209%202017
-                span https://fcc-timestamp-jor.glitch.me/1502236800
-                h3 In form:
-                span August 9, 2017
-                span 1502236800
-            div#query-form
-                form(action="/" method="get")
-                    input(type="text" id="time-string" required)
-                    input(type="submit" id="submit" value="submit")
+        div.example
+            h2 Example Input
+            div#flex-examples
+                div.sample-col
+                    h3 As parameter:
+                    span https://fcc-timestamp-jor.glitch.me/August%209%202017
+                    br
+                    span https://fcc-timestamp-jor.glitch.me/1502254800
+                div.sample-col
+                    h3 In form:
+                    span August 9, 2017
+                    br
+                    span 1502254800
+            h2 Example Output
+            span {"unix-time":"1502254800","natural-time":"Aug 9, 2017"}
+        div
+            form(action="/" id="query-form")
+                input(type="text" id="time-string" required)
+                input(type="submit" id="submit" value="Submit")
         footer
         script(
             src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"
+            type="text/javascript"
             )
         script(
-            src="/client.js"
+            src="js/client.js"
+            type="text/javascript"
             )

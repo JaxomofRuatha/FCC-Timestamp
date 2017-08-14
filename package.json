@@ -2,12 +2,12 @@
     "name": "fcc-timestamp-jor",
     "version": "0.0.1",
     "description": "A timestamp microservice created with Express fulfilling the user stories of the Free Code Camp back end project",
-    "main": "server.js",
+    "main": "app.js",
     "engines": {
         "node": "^6"
     },
     "scripts": {
-        "start": "node server.js"
+        "start": "node app.js"
     },
     "dependencies": {
         "body-parser": "^1.17.2",
