@@ -4,7 +4,7 @@ const router = express.Router();
 
 //Homepage render path setup
 router.get("/", (req, res) => {
-    res.render("index");
+    res.render("index", {currentUnix: moment().unix()});
 });
 
 //Logic for parsing url input
