@@ -20,5 +20,5 @@ app.use('/', index);
 
 // Start server
 app.listen(port, () => {
-  console.log('Timestamp server is listening on port ' + port);
+  console.log(`Timestamp server is listening on port ${port}`);
 });
