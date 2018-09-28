@@ -6,6 +6,7 @@ const router = express.Router();
 // Homepage render path setup
 router.get('/', (req, res) => {
   const nowUnix = moment().unix();
+
   res.render('index', { currentUnix: nowUnix });
 });
 
@@ -13,6 +14,7 @@ router.get('/', (req, res) => {
 router.get('/:inputTime', (req, res) => {
   const inputTime = req.params;
   const pattern = /^\d+$/g;
+
   if (pattern.test(inputTime)) {
     const naturalTime = moment.unix(inputTime).format('MMM D, YYYY');
     res.send({ 'unix-time': inputTime, 'natural-time': naturalTime });
